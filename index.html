@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="th">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
@@ -9,11 +9,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Sarabun:wght@400;500;700&display=swap" rel="stylesheet">
-    <style>
-        body {
-            font-family: 'Sarabun', sans-serif;
-        }
-    </style>
+    <link rel="stylesheet" href="styles.css">
+   
 </head>
 
 <body class="bg-gray-100">
@@ -246,7 +243,7 @@
             if (form) {
                 form.addEventListener('submit', function (event) {
                     event.preventDefault();
-                    // Hide the form and show the thank you message
+                    
                     var container = document.getElementById('survey-form-container');
                     var thankYou = document.getElementById('thank-you-message');
                     if (container) container.classList.add('hidden');
