@@ -9,8 +9,11 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Sarabun:wght@400;500;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
-   
+    <style>
+        body {
+            font-family: 'Sarabun', sans-serif;
+        }
+    </style>
 </head>
 
 <body class="bg-gray-100">
@@ -30,7 +33,7 @@
                 <div class="my-8 p-4 bg-gray-50 rounded-lg flex justify-center">
                     <img src="ตู้แช่ 7-Eleven Ai Smart Cooler ในร้านค้า.png" alt="ตู้แช่ 7-Eleven Ai Smart Cooler ในร้านค้า" class="rounded-lg shadow-md max-w-full h-auto">
                 </div>
-                <form id="satisfactionForm">
+                <form id="satisfactionForm" action="https://docs.google.com/forms/d/e/1FAIpQLSfTMuRlbaPIWsnUtsq31CyxlWo3CV5PiffQ4bxkrBjBnbpjHQ/formResponse" method="POST" target="_blank">
                     <fieldset class="mb-8">
                         <legend class="text-xl font-bold text-gray-700 mb-4 border-b pb-2">ส่วนที่ 1:
                             ข้อมูลส่วนตัวของผู้ตอบแบบสอบถาม</legend>
@@ -38,48 +41,48 @@
                             <label class="block text-gray-700 font-medium mb-2" for="gender">เพศ <span class="text-red-500">*</span></label>
                             <div class="flex flex-wrap gap-4">
                                 <label class="flex items-center space-x-2">
-                                    <input type="radio" name="gender" value="male" class="text-green-600 focus:ring-green-500" required>
+                                    <input type="radio" name="entry.1744760029" value="ชาย" class="text-green-600 focus:ring-green-500" required>
                                     <span>ชาย</span>
                                 </label>
                                 <label class="flex items-center space-x-2">
-                                    <input type="radio" name="gender" value="female" class="text-green-600 focus:ring-green-500" required>
+                                    <input type="radio" name="entry.1744760029" value="หญิง" class="text-green-600 focus:ring-green-500" required>
                                     <span>หญิง</span>
                                 </label>
                                 <label class="flex items-center space-x-2">
-                                    <input type="radio" name="gender" value="other" class="text-green-600 focus:ring-green-500" required>
+                                    <input type="radio" name="entry.1744760029" value="อื่น ๆ" class="text-green-600 focus:ring-green-500" required>
                                     <span>อื่น ๆ</span>
                                 </label>
                             </div>
                         </div>
                         <div class="mb-6">
                             <label class="block text-gray-700 font-medium mb-2" for="age">ช่วงอายุ <span class="text-red-500">*</span></label>
-                            <select id="age" name="age" class="w-full p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-green-500 focus:border-green-500 transition" required>
+                            <select id="age" name="entry.1545978259" class="w-full p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-green-500 focus:border-green-500 transition" required>
                                 <option value="" disabled selected>กรุณาเลือก</option>
-                                <option value="under18">ต่ำกว่า 18 ปี</option>
-                                <option value="18-25">18 - 25 ปี</option>
-                                <option value="26-35">26 - 35 ปี</option>
-                                <option value="36-45">36 - 45 ปี</option>
-                                <option value="46-55">46 - 55 ปี</option>
-                                <option value="over55">55 ปีขึ้นไป</option>
+                                <option value="ต่ำกว่า 18 ปี">ต่ำกว่า 18 ปี</option>
+                                <option value="18 - 25 ปี">18 - 25 ปี</option>
+                                <option value="26 - 35 ปี">26 - 35 ปี</option>
+                                <option value="36 - 45 ปี">36 - 45 ปี</option>
+                                <option value="46 - 55 ปี">46 - 55 ปี</option>
+                                <option value="55 ปีขึ้นไป">55 ปีขึ้นไป</option>
                             </select>
                         </div>
                         <div class="mb-6">
                             <label class="block text-gray-700 font-medium mb-2" for="occupation">อาชีพ <span class="text-red-500">*</span></label>
-                            <select id="occupation" name="occupation" class="w-full p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-green-500 focus:border-green-500 transition" required>
+                            <select id="occupation" name="entry.1234567890" class="w-full p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-green-500 focus:border-green-500 transition" required>
                                 <option value="" disabled selected>กรุณาเลือก</option>
-                                <option value="student">นักเรียน/นักศึกษา</option>
-                                <option value="7eleven_staff">พนักงานเซเว่น</option>
-                                <option value="7eleven_manager">ผู้จัดการเซเว่น</option>
-                                <option value="7eleven_assistant">ผู้ช่วยผู้จัดการเซเว่น</option>
-                                <option value="7eleven_parttime">พนักงานพาร์ทไทม์เซเว่น</option>
-                                <option value="teacher">ครู/อาจารย์</option>
-                                <option value="general">คนทั่วไป</option>
-                                <option value="other">อื่นๆ</option>
+                                <option value="นักเรียน/นักศึกษา">นักเรียน/นักศึกษา</option>
+                                <option value="พนักงานเซเว่น">พนักงานเซเว่น</option>
+                                <option value="ผู้จัดการเซเว่น">ผู้จัดการเซเว่น</option>
+                                <option value="ผู้ช่วยผู้จัดการเซเว่น">ผู้ช่วยผู้จัดการเซเว่น</option>
+                                <option value="พนักงานพาร์ทไทม์เซเว่น">พนักงานพาร์ทไทม์เซเว่น</option>
+                                <option value="ครู/อาจารย์">ครู/อาจารย์</option>
+                                <option value="คนทั่วไป">คนทั่วไป</option>
+                                <option value="อื่นๆ">อื่นๆ</option>
                             </select>
                         </div>
                         <div id="other-occupation-container" class="mb-6 hidden">
                             <label class="block text-gray-700 font-medium mb-2" for="other_occupation">โปรดระบุอาชีพ <span class="text-red-500">*</span></label>
-                            <input type="text" id="other_occupation" name="other_occupation" class="w-full p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-green-500 focus:border-green-500 transition" placeholder="ระบุอาชีพของคุณ">
+                            <input type="text" id="other_occupation" name="entry.1234567891" class="w-full p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-green-500 focus:border-green-500 transition" placeholder="ระบุอาชีพของคุณ">
                         </div>
                     </fieldset>
                     <fieldset class="mb-8">
@@ -92,11 +95,11 @@
                                 <label class="block text-gray-700 font-medium mb-3">1.
                                     ความสะดวกและความรวดเร็วในการค้นหาสินค้าที่ต้องการ <span class="text-red-500">*</span></label>
                                 <div class="grid grid-cols-5 gap-2 text-center">
-                                    <div><label class="block text-sm text-gray-600">น้อยที่สุด</label><input type="radio" name="q1" value="1" class="mt-2 text-green-600 focus:ring-green-500" required></div>
-                                    <div><label class="block text-sm text-gray-600">น้อย</label><input type="radio" name="q1" value="2" class="mt-2 text-green-600 focus:ring-green-500" required></div>
-                                    <div><label class="block text-sm text-gray-600">ปานกลาง</label><input type="radio" name="q1" value="3" class="mt-2 text-green-600 focus:ring-green-500" required></div>
-                                    <div><label class="block text-sm text-gray-600">มาก</label><input type="radio" name="q1" value="4" class="mt-2 text-green-600 focus:ring-green-500" required></div>
-                                    <div><label class="block text-sm text-gray-600">มากที่สุด</label><input type="radio" name="q1" value="5" class="mt-2 text-green-600 focus:ring-green-500" required></div>
+                                    <div><label class="block text-sm text-gray-600">น้อยที่สุด</label><input type="radio" name="entry.1111111111" value="1" class="mt-2 text-green-600 focus:ring-green-500" required></div>
+                                    <div><label class="block text-sm text-gray-600">น้อย</label><input type="radio" name="entry.1111111111" value="2" class="mt-2 text-green-600 focus:ring-green-500" required></div>
+                                    <div><label class="block text-sm text-gray-600">ปานกลาง</label><input type="radio" name="entry.1111111111" value="3" class="mt-2 text-green-600 focus:ring-green-500" required></div>
+                                    <div><label class="block text-sm text-gray-600">มาก</label><input type="radio" name="entry.1111111111" value="4" class="mt-2 text-green-600 focus:ring-green-500" required></div>
+                                    <div><label class="block text-sm text-gray-600">มากที่สุด</label><input type="radio" name="entry.1111111111" value="5" class="mt-2 text-green-600 focus:ring-green-500" required></div>
                                 </div>
                             </div>
                             <!-- Question 2 -->
@@ -104,11 +107,11 @@
                                 <label class="block text-gray-700 font-medium mb-3">2. ความน่าสนใจของฟีเจอร์ "แนะนำสินค้า"
                                     (AI Recommendation) <span class="text-red-500">*</span></label>
                                 <div class="grid grid-cols-5 gap-2 text-center">
-                                    <div><label class="block text-sm text-gray-600">น้อยที่สุด</label><input type="radio" name="q2" value="1" class="mt-2 text-green-600 focus:ring-green-500" required></div>
-                                    <div><label class="block text-sm text-gray-600">น้อย</label><input type="radio" name="q2" value="2" class="mt-2 text-green-600 focus:ring-green-500" required></div>
-                                    <div><label class="block text-sm text-gray-600">ปานกลาง</label><input type="radio" name="q2" value="3" class="mt-2 text-green-600 focus:ring-green-500" required></div>
-                                    <div><label class="block text-sm text-gray-600">มาก</label><input type="radio" name="q2" value="4" class="mt-2 text-green-600 focus:ring-green-500" required></div>
-                                    <div><label class="block text-sm text-gray-600">มากที่สุด</label><input type="radio" name="q2" value="5" class="mt-2 text-green-600 focus:ring-green-500" required></div>
+                                    <div><label class="block text-sm text-gray-600">น้อยที่สุด</label><input type="radio" name="entry.1111111112" value="1" class="mt-2 text-green-600 focus:ring-green-500" required></div>
+                                    <div><label class="block text-sm text-gray-600">น้อย</label><input type="radio" name="entry.1111111112" value="2" class="mt-2 text-green-600 focus:ring-green-500" required></div>
+                                    <div><label class="block text-sm text-gray-600">ปานกลาง</label><input type="radio" name="entry.1111111112" value="3" class="mt-2 text-green-600 focus:ring-green-500" required></div>
+                                    <div><label class="block text-sm text-gray-600">มาก</label><input type="radio" name="entry.1111111112" value="4" class="mt-2 text-green-600 focus:ring-green-500" required></div>
+                                    <div><label class="block text-sm text-gray-600">มากที่สุด</label><input type="radio" name="entry.1111111112" value="5" class="mt-2 text-green-600 focus:ring-green-500" required></div>
                                 </div>
                             </div>
                             <!-- Question 3 -->
@@ -116,11 +119,11 @@
                                 <label class="block text-gray-700 font-medium mb-3">3. ความชัดเจนของข้อมูลสินค้า ราคา
                                     และโปรโมชั่นบนจอแสดงผล <span class="text-red-500">*</span></label>
                                 <div class="grid grid-cols-5 gap-2 text-center">
-                                    <div><label class="block text-sm text-gray-600">น้อยที่สุด</label><input type="radio" name="q3" value="1" class="mt-2 text-green-600 focus:ring-green-500" required></div>
-                                    <div><label class="block text-sm text-gray-600">น้อย</label><input type="radio" name="q3" value="2" class="mt-2 text-green-600 focus:ring-green-500" required></div>
-                                    <div><label class="block text-sm text-gray-600">ปานกลาง</label><input type="radio" name="q3" value="3" class="mt-2 text-green-600 focus:ring-green-500" required></div>
-                                    <div><label class="block text-sm text-gray-600">มาก</label><input type="radio" name="q3" value="4" class="mt-2 text-green-600 focus:ring-green-500" required></div>
-                                    <div><label class="block text-sm text-gray-600">มากที่สุด</label><input type="radio" name="q3" value="5" class="mt-2 text-green-600 focus:ring-green-500" required></div>
+                                    <div><label class="block text-sm text-gray-600">น้อยที่สุด</label><input type="radio" name="entry.1111111113" value="1" class="mt-2 text-green-600 focus:ring-green-500" required></div>
+                                    <div><label class="block text-sm text-gray-600">น้อย</label><input type="radio" name="entry.1111111113" value="2" class="mt-2 text-green-600 focus:ring-green-500" required></div>
+                                    <div><label class="block text-sm text-gray-600">ปานกลาง</label><input type="radio" name="entry.1111111113" value="3" class="mt-2 text-green-600 focus:ring-green-500" required></div>
+                                    <div><label class="block text-sm text-gray-600">มาก</label><input type="radio" name="entry.1111111113" value="4" class="mt-2 text-green-600 focus:ring-green-500" required></div>
+                                    <div><label class="block text-sm text-gray-600">มากที่สุด</label><input type="radio" name="entry.1111111113" value="5" class="mt-2 text-green-600 focus:ring-green-500" required></div>
                                 </div>
                             </div>
                             <!-- Question 4 -->
@@ -128,11 +131,11 @@
                                 <label class="block text-gray-700 font-medium mb-3">4. ความพึงพอใจต่อโปรโมชั่นที่ได้รับ
                                     (เช่น ส่วนลดสินค้าใกล้หมดอายุ) <span class="text-red-500">*</span></label>
                                 <div class="grid grid-cols-5 gap-2 text-center">
-                                    <div><label class="block text-sm text-gray-600">น้อยที่สุด</label><input type="radio" name="q4" value="1" class="mt-2 text-green-600 focus:ring-green-500" required></div>
-                                    <div><label class="block text-sm text-gray-600">น้อย</label><input type="radio" name="q4" value="2" class="mt-2 text-green-600 focus:ring-green-500" required></div>
-                                    <div><label class="block text-sm text-gray-600">ปานกลาง</label><input type="radio" name="q4" value="3" class="mt-2 text-green-600 focus:ring-green-500" required></div>
-                                    <div><label class="block text-sm text-gray-600">มาก</label><input type="radio" name="q4" value="4" class="mt-2 text-green-600 focus:ring-green-500" required></div>
-                                    <div><label class="block text-sm text-gray-600">มากที่สุด</label><input type="radio" name="q4" value="5" class="mt-2 text-green-600 focus:ring-green-500" required></div>
+                                    <div><label class="block text-sm text-gray-600">น้อยที่สุด</label><input type="radio" name="entry.1111111114" value="1" class="mt-2 text-green-600 focus:ring-green-500" required></div>
+                                    <div><label class="block text-sm text-gray-600">น้อย</label><input type="radio" name="entry.1111111114" value="2" class="mt-2 text-green-600 focus:ring-green-500" required></div>
+                                    <div><label class="block text-sm text-gray-600">ปานกลาง</label><input type="radio" name="entry.1111111114" value="3" class="mt-2 text-green-600 focus:ring-green-500" required></div>
+                                    <div><label class="block text-sm text-gray-600">มาก</label><input type="radio" name="entry.1111111114" value="4" class="mt-2 text-green-600 focus:ring-green-500" required></div>
+                                    <div><label class="block text-sm text-gray-600">มากที่สุด</label><input type="radio" name="entry.1111111114" value="5" class="mt-2 text-green-600 focus:ring-green-500" required></div>
                                 </div>
                             </div>
                             <!-- Question 5 -->
@@ -140,11 +143,11 @@
                                 <label class="block text-gray-700 font-medium mb-3">5.
                                     ภาพรวมความพึงพอใจต่อประสบการณ์ที่ได้รับจาก Ai Smart Cooler <span class="text-red-500">*</span></label>
                                 <div class="grid grid-cols-5 gap-2 text-center">
-                                    <div><label class="block text-sm text-gray-600">น้อยที่สุด</label><input type="radio" name="q5" value="1" class="mt-2 text-green-600 focus:ring-green-500" required></div>
-                                    <div><label class="block text-sm text-gray-600">น้อย</label><input type="radio" name="q5" value="2" class="mt-2 text-green-600 focus:ring-green-500" required></div>
-                                    <div><label class="block text-sm text-gray-600">ปานกลาง</label><input type="radio" name="q5" value="3" class="mt-2 text-green-600 focus:ring-green-500" required></div>
-                                    <div><label class="block text-sm text-gray-600">มาก</label><input type="radio" name="q5" value="4" class="mt-2 text-green-600 focus:ring-green-500" required></div>
-                                    <div><label class="block text-sm text-gray-600">มากที่สุด</label><input type="radio" name="q5" value="5" class="mt-2 text-green-600 focus:ring-green-500" required></div>
+                                    <div><label class="block text-sm text-gray-600">น้อยที่สุด</label><input type="radio" name="entry.1111111115" value="1" class="mt-2 text-green-600 focus:ring-green-500" required></div>
+                                    <div><label class="block text-sm text-gray-600">น้อย</label><input type="radio" name="entry.1111111115" value="2" class="mt-2 text-green-600 focus:ring-green-500" required></div>
+                                    <div><label class="block text-sm text-gray-600">ปานกลาง</label><input type="radio" name="entry.1111111115" value="3" class="mt-2 text-green-600 focus:ring-green-500" required></div>
+                                    <div><label class="block text-sm text-gray-600">มาก</label><input type="radio" name="entry.1111111115" value="4" class="mt-2 text-green-600 focus:ring-green-500" required></div>
+                                    <div><label class="block text-sm text-gray-600">มากที่สุด</label><input type="radio" name="entry.1111111115" value="5" class="mt-2 text-green-600 focus:ring-green-500" required></div>
                                 </div>
                             </div>
                             <!-- Question 6 -->
@@ -152,11 +155,11 @@
                                 <label class="block text-gray-700 font-medium mb-3">6.
                                     ความสวยงามและความน่าสนใจของกราฟิกและอนิเมชันบนจอแสดงผล <span class="text-red-500">*</span></label>
                                 <div class="grid grid-cols-5 gap-2 text-center">
-                                    <div><label class="block text-sm text-gray-600">น้อยที่สุด</label><input type="radio" name="q6" value="1" class="mt-2 text-green-600 focus:ring-green-500" required></div>
-                                    <div><label class="block text-sm text-gray-600">น้อย</label><input type="radio" name="q6" value="2" class="mt-2 text-green-600 focus:ring-green-500" required></div>
-                                    <div><label class="block text-sm text-gray-600">ปานกลาง</label><input type="radio" name="q6" value="3" class="mt-2 text-green-600 focus:ring-green-500" required></div>
-                                    <div><label class="block text-sm text-gray-600">มาก</label><input type="radio" name="q6" value="4" class="mt-2 text-green-600 focus:ring-green-500" required></div>
-                                    <div><label class="block text-sm text-gray-600">มากที่สุด</label><input type="radio" name="q6" value="5" class="mt-2 text-green-600 focus:ring-green-500" required></div>
+                                    <div><label class="block text-sm text-gray-600">น้อยที่สุด</label><input type="radio" name="entry.1111111116" value="1" class="mt-2 text-green-600 focus:ring-green-500" required></div>
+                                    <div><label class="block text-sm text-gray-600">น้อย</label><input type="radio" name="entry.1111111116" value="2" class="mt-2 text-green-600 focus:ring-green-500" required></div>
+                                    <div><label class="block text-sm text-gray-600">ปานกลาง</label><input type="radio" name="entry.1111111116" value="3" class="mt-2 text-green-600 focus:ring-green-500" required></div>
+                                    <div><label class="block text-sm text-gray-600">มาก</label><input type="radio" name="entry.1111111116" value="4" class="mt-2 text-green-600 focus:ring-green-500" required></div>
+                                    <div><label class="block text-sm text-gray-600">มากที่สุด</label><input type="radio" name="entry.1111111116" value="5" class="mt-2 text-green-600 focus:ring-green-500" required></div>
                                 </div>
                             </div>
                             <!-- Question 7 -->
@@ -165,11 +168,11 @@
                                     ประโยชน์ของข้อมูลเพิ่มเติมเกี่ยวกับสินค้า (เช่น ข้อมูลโภชนาการ) ที่แสดงบนหน้าจอ
                                     <span class="text-red-500">*</span></label>
                                 <div class="grid grid-cols-5 gap-2 text-center">
-                                    <div><label class="block text-sm text-gray-600">น้อยที่สุด</label><input type="radio" name="q7" value="1" class="mt-2 text-green-600 focus:ring-green-500" required></div>
-                                    <div><label class="block text-sm text-gray-600">น้อย</label><input type="radio" name="q7" value="2" class="mt-2 text-green-600 focus:ring-green-500" required></div>
-                                    <div><label class="block text-sm text-gray-600">ปานกลาง</label><input type="radio" name="q7" value="3" class="mt-2 text-green-600 focus:ring-green-500" required></div>
-                                    <div><label class="block text-sm text-gray-600">มาก</label><input type="radio" name="q7" value="4" class="mt-2 text-green-600 focus:ring-green-500" required></div>
-                                    <div><label class="block text-sm text-gray-600">มากที่สุด</label><input type="radio" name="q7" value="5" class="mt-2 text-green-600 focus:ring-green-500" required></div>
+                                    <div><label class="block text-sm text-gray-600">น้อยที่สุด</label><input type="radio" name="entry.1111111117" value="1" class="mt-2 text-green-600 focus:ring-green-500" required></div>
+                                    <div><label class="block text-sm text-gray-600">น้อย</label><input type="radio" name="entry.1111111117" value="2" class="mt-2 text-green-600 focus:ring-green-500" required></div>
+                                    <div><label class="block text-sm text-gray-600">ปานกลาง</label><input type="radio" name="entry.1111111117" value="3" class="mt-2 text-green-600 focus:ring-green-500" required></div>
+                                    <div><label class="block text-sm text-gray-600">มาก</label><input type="radio" name="entry.1111111117" value="4" class="mt-2 text-green-600 focus:ring-green-500" required></div>
+                                    <div><label class="block text-sm text-gray-600">มากที่สุด</label><input type="radio" name="entry.1111111117" value="5" class="mt-2 text-green-600 focus:ring-green-500" required></div>
                                 </div>
                             </div>
                             <!-- Question 8 -->
@@ -177,11 +180,11 @@
                                 <label class="block text-gray-700 font-medium mb-3">8. ความรู้สึกว่านวัตกรรม Ai Smart
                                     Cooler ทำให้ร้าน 7-Eleven ดูทันสมัยและน่าเข้าใช้บริการมากขึ้น <span class="text-red-500">*</span></label>
                                 <div class="grid grid-cols-5 gap-2 text-center">
-                                    <div><label class="block text-sm text-gray-600">น้อยที่สุด</label><input type="radio" name="q8" value="1" class="mt-2 text-green-600 focus:ring-green-500" required></div>
-                                    <div><label class="block text-sm text-gray-600">น้อย</label><input type="radio" name="q8" value="2" class="mt-2 text-green-600 focus:ring-green-500" required></div>
-                                    <div><label class="block text-sm text-gray-600">ปานกลาง</label><input type="radio" name="q8" value="3" class="mt-2 text-green-600 focus:ring-green-500" required></div>
-                                    <div><label class="block text-sm text-gray-600">มาก</label><input type="radio" name="q8" value="4" class="mt-2 text-green-600 focus:ring-green-500" required></div>
-                                    <div><label class="block text-sm text-gray-600">มากที่สุด</label><input type="radio" name="q8" value="5" class="mt-2 text-green-600 focus:ring-green-500" required></div>
+                                    <div><label class="block text-sm text-gray-600">น้อยที่สุด</label><input type="radio" name="entry.1111111118" value="1" class="mt-2 text-green-600 focus:ring-green-500" required></div>
+                                    <div><label class="block text-sm text-gray-600">น้อย</label><input type="radio" name="entry.1111111118" value="2" class="mt-2 text-green-600 focus:ring-green-500" required></div>
+                                    <div><label class="block text-sm text-gray-600">ปานกลาง</label><input type="radio" name="entry.1111111118" value="3" class="mt-2 text-green-600 focus:ring-green-500" required></div>
+                                    <div><label class="block text-sm text-gray-600">มาก</label><input type="radio" name="entry.1111111118" value="4" class="mt-2 text-green-600 focus:ring-green-500" required></div>
+                                    <div><label class="block text-sm text-gray-600">มากที่สุด</label><input type="radio" name="entry.1111111118" value="5" class="mt-2 text-green-600 focus:ring-green-500" required></div>
                                 </div>
                             </div>
                             <!-- Question 9 -->
@@ -189,11 +192,11 @@
                                 <label class="block text-gray-700 font-medium mb-3">9. ความง่ายในการโต้ตอบกับฟังก์ชันต่างๆ
                                     บนหน้าจอ (เช่น การสัมผัส, การเลือกดูสินค้า) <span class="text-red-500">*</span></label>
                                 <div class="grid grid-cols-5 gap-2 text-center">
-                                    <div><label class="block text-sm text-gray-600">น้อยที่สุด</label><input type="radio" name="q9" value="1" class="mt-2 text-green-600 focus:ring-green-500" required></div>
-                                    <div><label class="block text-sm text-gray-600">น้อย</label><input type="radio" name="q9" value="2" class="mt-2 text-green-600 focus:ring-green-500" required></div>
-                                    <div><label class="block text-sm text-gray-600">ปานกลาง</label><input type="radio" name="q9" value="3" class="mt-2 text-green-600 focus:ring-green-500" required></div>
-                                    <div><label class="block text-sm text-gray-600">มาก</label><input type="radio" name="q9" value="4" class="mt-2 text-green-600 focus:ring-green-500" required></div>
-                                    <div><label class="block text-sm text-gray-600">มากที่สุด</label><input type="radio" name="q9" value="5" class="mt-2 text-green-600 focus:ring-green-500" required></div>
+                                    <div><label class="block text-sm text-gray-600">น้อยที่สุด</label><input type="radio" name="entry.1111111119" value="1" class="mt-2 text-green-600 focus:ring-green-500" required></div>
+                                    <div><label class="block text-sm text-gray-600">น้อย</label><input type="radio" name="entry.1111111119" value="2" class="mt-2 text-green-600 focus:ring-green-500" required></div>
+                                    <div><label class="block text-sm text-gray-600">ปานกลาง</label><input type="radio" name="entry.1111111119" value="3" class="mt-2 text-green-600 focus:ring-green-500" required></div>
+                                    <div><label class="block text-sm text-gray-600">มาก</label><input type="radio" name="entry.1111111119" value="4" class="mt-2 text-green-600 focus:ring-green-500" required></div>
+                                    <div><label class="block text-sm text-gray-600">มากที่สุด</label><input type="radio" name="entry.1111111119" value="5" class="mt-2 text-green-600 focus:ring-green-500" required></div>
                                 </div>
                             </div>
                             <!-- Question 10 -->
@@ -201,11 +204,11 @@
                                 <label class="block text-gray-700 font-medium mb-3">10.
                                     โอกาสที่ท่านจะแนะนำให้เพื่อนหรือคนรู้จักมาลองใช้ประสบการณ์จาก Ai Smart Cooler <span class="text-red-500">*</span></label>
                                 <div class="grid grid-cols-5 gap-2 text-center">
-                                    <div><label class="block text-sm text-gray-600">น้อยที่สุด</label><input type="radio" name="q10" value="1" class="mt-2 text-green-600 focus:ring-green-500" required></div>
-                                    <div><label class="block text-sm text-gray-600">น้อย</label><input type="radio" name="q10" value="2" class="mt-2 text-green-600 focus:ring-green-500" required></div>
-                                    <div><label class="block text-sm text-gray-600">ปานกลาง</label><input type="radio" name="q10" value="3" class="mt-2 text-green-600 focus:ring-green-500" required></div>
-                                    <div><label class="block text-sm text-gray-600">มาก</label><input type="radio" name="q10" value="4" class="mt-2 text-green-600 focus:ring-green-500" required></div>
-                                    <div><label class="block text-sm text-gray-600">มากที่สุด</label><input type="radio" name="q10" value="5" class="mt-2 text-green-600 focus:ring-green-500" required></div>
+                                    <div><label class="block text-sm text-gray-600">น้อยที่สุด</label><input type="radio" name="entry.1111111120" value="1" class="mt-2 text-green-600 focus:ring-green-500" required></div>
+                                    <div><label class="block text-sm text-gray-600">น้อย</label><input type="radio" name="entry.1111111120" value="2" class="mt-2 text-green-600 focus:ring-green-500" required></div>
+                                    <div><label class="block text-sm text-gray-600">ปานกลาง</label><input type="radio" name="entry.1111111120" value="3" class="mt-2 text-green-600 focus:ring-green-500" required></div>
+                                    <div><label class="block text-sm text-gray-600">มาก</label><input type="radio" name="entry.1111111120" value="4" class="mt-2 text-green-600 focus:ring-green-500" required></div>
+                                    <div><label class="block text-sm text-gray-600">มากที่สุด</label><input type="radio" name="entry.1111111120" value="5" class="mt-2 text-green-600 focus:ring-green-500" required></div>
                                 </div>
                             </div>
                         </div>
@@ -215,7 +218,7 @@
                             ข้อเสนอแนะเพิ่มเติม</legend>
                         <div class="mb-6">
                             <label class="block text-gray-700 font-medium mb-2" for="suggestions">ท่านมีข้อเสนอแนะเพิ่มเติมเพื่อการพัฒนา หรือฟีเจอร์ใดที่อยากให้มีในอนาคต</label>
-                            <textarea id="suggestions" name="suggestions" rows="5" class="w-full p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-green-500 focus:border-green-500 transition" placeholder="แสดงความคิดเห็นของคุณที่นี่..."></textarea>
+                            <textarea id="suggestions" name="entry.1111111121" rows="5" class="w-full p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-green-500 focus:border-green-500 transition" placeholder="แสดงความคิดเห็นของคุณที่นี่..."></textarea>
                         </div>
                     </fieldset>
                     <div class="mt-10 text-center">
@@ -226,39 +229,17 @@
                 </form>
             </div>
         </div>
-        <div id="thank-you-message" class="hidden text-center bg-white rounded-2xl shadow-lg p-10">
-            <div class="w-20 h-20 bg-green-100 rounded-full mx-auto flex items-center justify-center mb-6">
-                <svg class="w-12 h-12 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
-                </svg>
-            </div>
-            <h2 class="text-3xl font-bold text-gray-800 mb-2">ส่งข้อมูลสำเร็จ!</h2>
-            <p class="text-gray-600 text-lg">ขอขอบคุณสำหรับความคิดเห็นอันเป็นประโยชน์</p>
-        </div>
     </div>
 
     <script>
         document.addEventListener('DOMContentLoaded', function () {
-            var form = document.getElementById('satisfactionForm');
-            if (form) {
-                form.addEventListener('submit', function (event) {
-                    event.preventDefault();
-
-                    var container = document.getElementById('survey-form-container');
-                    var thankYou = document.getElementById('thank-you-message');
-                    if (container) container.classList.add('hidden');
-                    if (thankYou) thankYou.classList.remove('hidden');
-                    window.scrollTo({ top: 0, behavior: 'smooth' });
-                });
-            }
-
             var occupation = document.getElementById('occupation');
             var otherOccupationContainer = document.getElementById('other-occupation-container');
             var otherOccupationInput = document.getElementById('other_occupation');
 
             if (occupation) {
                 occupation.addEventListener('change', function () {
-                    if (this.value === 'other') {
+                    if (this.value === 'อื่นๆ') {
                         otherOccupationContainer.classList.remove('hidden');
                         otherOccupationInput.required = true;
                     } else {
